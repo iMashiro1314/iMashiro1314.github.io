@@ -1,7 +1,7 @@
 name: Get Data
 on:
   schedule:
-    - cron: '0 16 * * *' # 17:45 (UTC+8)
+    - cron: '0 16 * * *' # 00:00 (UTC+8)
   workflow_dispatch:
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add results/*
           git commit -m "Update data"
