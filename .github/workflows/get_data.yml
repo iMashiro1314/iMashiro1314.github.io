@@ -28,7 +28,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@iMashiro1314.github.io"
           git config --local user.name "github-actions[bot]"
           git add results/*
           git commit -m "Update data"
